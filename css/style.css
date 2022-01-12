@@ -1,26 +1,142 @@
+
+#header {
+	text-align: center;
+	align-items: center;
+	background: lightpink;
+}
+
+.name{
+	font-size: 200%;
+}
+
+.header-bio{
+	font-size: 100%;
+}
+
+.socials {
+	justify-content: space-evenly;
+	background: lightslategrey;
+	margin-top: 40px;
+}
+
+.socials button{
+	margin-top: 2%;
+}
+
+.Linkedin{
+	border-radius: 30px;
+	border: 1px transparent;
+	background: whitesmoke;
+	width:  125px;
+	height: 40px;
+	transition:800ms ease all;
+	margin-right: 2%;
+}
+
+.Linkedin:hover{
+	background: green;
+}
+
+.Linkedin a{
+	font-family: 'Helvetica';
+	font-size:  13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: black;
+	text-decoration:  underline;
+	transition:800ms ease all;
+}
+
+.Linkedin a:hover{
+	color: pink;
+	transition:800ms ease all;
+}
+
+.Instagram{
+	border-radius: 30px;
+	border: 1px transparent;
+	background: whitesmoke;
+	width:  125px;
+	height: 40px;
+	transition:800ms ease all;
+}
+
+.Instagram a{
+	font-family: 'Helvetica';
+	font-size:  13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: black;
+	text-decoration:  underline;
+	transition:800ms ease all;
+}
+
+.Instagram a:hover{
+	color: pink;
+	transition:800ms ease all;
+}
+
+.Email{
+	border-radius: 30px;
+	border: 1px transparent;
+	background: whitesmoke;
+	width:  125px;
+	height: 40px;
+	transition:800ms ease all;
+}
+
+.Email a{
+	font-family: 'Helvetica';
+	font-size:  13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: black;
+	text-decoration:  underline;
+	transition:800ms ease all;
+}
+
+.Email a:hover{
+	color: pink;
+	transition:800ms ease all;
+}
+
+
+/* this is code from day 1 intro to css (use to refer back to)
+
 body {
-	background-color: lightsteelblue;
-	color: white;
+	background-color: white;
+	color: black;
 	font-family: 'Source Sans Pro', sans-serif;
 
 }
 
 a {
-	color: white;
+	color: black;
+	text-align:  center;
 }
 
 h1 {
-	color: blue;
+	text-align: center;
+	color: black;
 	font-family: 'Luxurious Roman', cursive;
+	font-size: 40px;
+}
+
+h2 {
+	text-align: center;
+
 }
 
 p{
+	text-align: center;
 	font-size: 13px;
 	font-family: 'Source Sans Pro', sans-serif;
 	color: #D174FF;
+	text-align: center;
 
 }
 
 p2{
 	color: lightpink;
-}
+	text-align: center;
+} */
