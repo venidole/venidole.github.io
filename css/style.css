@@ -1,104 +1,281 @@
+body{
+	
+	/*next three lines are code for background*/
+	background-color: #f5e3e6;
+	background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
 
-#header {
-	text-align: center;
-	align-items: center;
-	background: lightpink;
+	width: 100%;
+	margin-top: 0px;
+	margin-left:  0px;
+	margin-right: 0px;
+
+}
+
+#header{
+	width: 100%;
+	display: flex;
+	justify-content:  space-between;
+	position:  fixed;
+	border: 1px solid black;
+	height: 7%;
+	background: rgba(255, 255, 255, 0.95);
+	padding: 1%;
+}
+
+#profile{
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
 }
 
 .name{
-	font-size: 200%;
-}
-
-.header-bio{
-	font-size: 100%;
-}
-
-.socials {
-	justify-content: space-evenly;
-	background: lightslategrey;
-	margin-top: 40px;
-}
-
-.socials button{
-	margin-top: 2%;
-}
-
-.Linkedin{
-	border-radius: 30px;
-	border: 1px transparent;
-	background: whitesmoke;
-	width:  125px;
-	height: 40px;
-	transition:800ms ease all;
+	/*border: 1px solid black;*/
 	margin-right: 2%;
+	max-width: 40%;
+	width: 40%;
 }
 
-.Linkedin:hover{
-	background: green;
+.links{
+	/*border: 1px solid black;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-right: 2%;
+	width: 20%;
+
+}
+	.Resume{
+		border-radius: 30px;
+		border: 1px transparent;
+		background: lightpink;
+		width:  125px;
+		height: 40px;
+		transition:800ms ease all;
+		margin-right: 2%;
+		width: 100%;
+	}
+
+	.Resume:hover{
+		background: white;
+	}
+
+	.Resume a{
+		font-family: 'Helvetica';
+		font-size:  13px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: black;
+		text-decoration:  underline;
+		transition:800ms ease all;
+	}
+
+	.Resume a:hover{
+		color: lightpink;
+		transition:800ms ease all;
+	}
+
+	.Linkedin{
+		border-radius: 30px;
+		border: 1px transparent;
+		background: lightpink;
+		width:  125px;
+		height: 40px;
+		transition:800ms ease all;
+		margin-right: 2%;
+		width: 100%
+	}
+
+	.Linkedin:hover{
+		background: white;
+	}
+
+	.Linkedin a{
+		font-family: 'Helvetica';
+		font-size:  13px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: black;
+		text-decoration:  underline;
+		transition:800ms ease all;
+	}
+
+	.Linkedin a:hover{
+		color: lightpink;
+		transition:800ms ease all;
+	}
+
+	.Instagram{
+		border-radius: 30px;
+		border: 1px transparent;
+		background: lightpink;
+		width:  125px;
+		height: 40px;
+		transition:800ms ease all;
+		margin-right: 2%;
+		width: 100%
+	}
+
+	.Instagram:hover{
+		background: white;
+	}
+
+	.Instagram a{
+		font-family: 'Helvetica';
+		font-size:  13px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: black;
+		text-decoration:  underline;
+		transition:800ms ease all;
+	}
+
+	.Instagram a:hover{
+		color: lightpink;
+		transition:800ms ease all;
+	}
+
+	.Email{
+		border-radius: 30px;
+		border: 1px transparent;
+		background: lightpink;
+		width:  125px;
+		height: 40px;
+		transition:800ms ease all;
+		width: 100%;
+	}
+
+	.Email:hover{
+		background: white;
+	}
+
+	.Email a{
+		font-family: 'Helvetica';
+		font-size:  13px;
+		font-weight: 400;
+		letter-spacing: 1px;
+		color: black;
+		text-decoration:  underline;
+		transition:800ms ease all;
+	}
+
+	.Email a:hover{
+		color: lightpink;
+		transition:800ms ease all;
+	}
+
+img{
+	/*border: 1px solid black;*/
+	border-radius: 5px;
+	max-width: 30%;
+	height: auto;
 }
 
-.Linkedin a{
-	font-family: 'Helvetica';
-	font-size:  13px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: black;
-	text-decoration:  underline;
+#interests{
+	/*flex-direction: row;
+	display: block;
+	width: 80%;
+	padding: 2% 7% 0% 7%;
+	height: 40%;
+	display: inline-flex; */
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5%;
+}
+
+.column-left{
+	float: left;
+	margin-right: 20px;
+	width: 30%;
+	height:100px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background: transparent;
+	border: 1px solid black;
 	transition:800ms ease all;
 }
 
-.Linkedin a:hover{
-	color: pink;
+.column-left:hover{
+	transform:  scale(1.2);
+	/*transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+	/*padding-top, padding-right, padding-bottom, and padding-left */
+	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
+  box-shadow: 0px 0px 36px 4px #D9D9D9;
+  transition:800ms ease all;
+}
+
+.column-middle{
+	width: 30%;
+	height: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background: transparent;
+	border: 1px solid black;
+	margin-right: 20px;
 	transition:800ms ease all;
 }
 
-.Instagram{
-	border-radius: 30px;
-	border: 1px transparent;
-	background: whitesmoke;
-	width:  125px;
-	height: 40px;
-	transition:800ms ease all;
+.column-middle:hover{
+	transform:  scale(1.1);
+	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
+  box-shadow: 0px 0px 36px 4px #D9D9D9;
+  transition:800ms ease all;
 }
 
-.Instagram a{
-	font-family: 'Helvetica';
-	font-size:  13px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: black;
-	text-decoration:  underline;
-	transition:800ms ease all;
+.column-right{
+	float: right;
+	width: 30%;
+	height: 100px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background: transparent;
+	border: 1px solid black;
+	 transition:800ms ease all;
 }
 
-.Instagram a:hover{
-	color: pink;
-	transition:800ms ease all;
+.column-right:hover{
+		transform:  scale(1.1);
+	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
+  box-shadow: 0px 0px 36px 4px #D9D9D9;
+  transition:800ms ease all;
 }
 
-.Email{
-	border-radius: 30px;
-	border: 1px transparent;
-	background: whitesmoke;
-	width:  125px;
-	height: 40px;
-	transition:800ms ease all;
+#experience{
+	border: 1px solid black;
+	padding: 5%;
 }
 
-.Email a{
-	font-family: 'Helvetica';
-	font-size:  13px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: black;
-	text-decoration:  underline;
-	transition:800ms ease all;
+#interests{
+	border: 1px solid black;
+	padding: 5%
 }
 
-.Email a:hover{
-	color: pink;
-	transition:800ms ease all;
+h5{
+	padding: 5%;
 }
+
+#footer{
+	margin-top: 10px;
+	display: flex;
+	justify-content:  space-between;
+	border-top: 1px solid black;
+}
+/* this section makes background color move
+background-color: #d9e4f5;
+background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
 
 
 /* this is code from day 1 intro to css (use to refer back to)
