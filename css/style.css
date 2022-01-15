@@ -16,16 +16,70 @@ body{
 	display: flex;
 	justify-content:  space-between;
 	position:  fixed;
-	border: 1px solid black;
 	height: 7%;
 	background: rgba(255, 255, 255, 0.95);
 	padding: 1%;
+	margin-top: -70px;
+	z-index: 1;
+}
+
+/*h{
+	font-family: 'Euphoria Script', cursive;
+	font-size: 50px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	margin-left: 2%;
+}*/
+
+a2{
+	margin-left: 80%;
+	text-align: right;
+	  position: absolute;
+	  top: 50%;
+	  -ms-transform: translateY(-50%);
+	  transform: translateY(-50%);
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 550;
+
+
 }
 
 #profile{
 	display: flex;
 	justify-content: space-evenly;
 	padding: 5%;
+	margin-top: 70px;
+}
+
+#profile img{
+	border-radius: 5px;
+	max-width: 30%;
+	height: auto;
+}
+
+.name h1{
+	font-family: 'Source Serif Pro', serif;
+	font-size: 60px;
+	margin-bottom: 0px;
+	line-height: 60px;
+}
+
+.name h2{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	font-size: 25px;
+
+}
+
+.name p{
+	font-family: 'Kanit', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 29px;
+
 }
 
 .name{
@@ -60,9 +114,9 @@ body{
 	}
 
 	.Resume a{
-		font-family: 'Helvetica';
-		font-size:  13px;
-		font-weight: 400;
+		font-family: 'Quicksand', sans-serif;
+		font-size:  14px;
+		font-weight: 650;
 		letter-spacing: 1px;
 		color: black;
 		text-decoration:  underline;
@@ -90,9 +144,9 @@ body{
 	}
 
 	.Linkedin a{
-		font-family: 'Helvetica';
-		font-size:  13px;
-		font-weight: 400;
+		font-family: 'Quicksand', sans-serif;
+		font-size:  14px;
+		font-weight: 650;
 		letter-spacing: 1px;
 		color: black;
 		text-decoration:  underline;
@@ -120,9 +174,9 @@ body{
 	}
 
 	.Instagram a{
-		font-family: 'Helvetica';
-		font-size:  13px;
-		font-weight: 400;
+		font-family: 'Quicksand', sans-serif;
+		font-size:  14px;
+		font-weight: 650;
 		letter-spacing: 1px;
 		color: black;
 		text-decoration:  underline;
@@ -149,9 +203,9 @@ body{
 	}
 
 	.Email a{
-		font-family: 'Helvetica';
-		font-size:  13px;
-		font-weight: 400;
+		font-family: 'Quicksand', sans-serif;
+		font-size:  14px;
+		font-weight: 650;
 		letter-spacing: 1px;
 		color: black;
 		text-decoration:  underline;
@@ -163,11 +217,46 @@ body{
 		transition:800ms ease all;
 	}
 
-img{
+#header img{
 	/*border: 1px solid black;*/
 	border-radius: 5px;
 	max-width: 30%;
 	height: auto;
+}
+
+.Columbia{
+
+}
+
+.HSO{
+	text-align: right;
+}
+
+h3{
+	font-family: 'Source Serif Pro', serif;
+	font-size: 35px;
+
+}
+
+h4{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+
+}
+
+p2{
+	font-family: 'Kanit', sans-serif;
+	font-size: 20px;
+	font-weight: heavier;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	max-width: 20px;
+
+}
+
+.research{
+	margin-top: 200px;
+	margin-bottom: 100px;
 }
 
 #interests{
@@ -179,34 +268,154 @@ img{
 	display: inline-flex; */
 	display: flex;
 	justify-content: space-evenly;
-	padding: 5%;
+	margin-top: 0px;
 }
 
 .column-left{
-	float: left;
+	/*float: left;
 	margin-right: 20px;
 	width: 30%;
-	height:100px;
+	height:250px;
 	border-radius: 20px;
 	font-size: 14px;
 	padding: 3%;
 	background: transparent;
 	border: 1px solid black;
 	transition:800ms ease all;
+	perspective: 1000px;*/
+	background-color: transparent;
+  	width: 400px;
+  	height: 530px;
+ 	 transition:800ms ease all;
+ 	border-radius: 10px;
 }
 
-.column-left:hover{
-	transform:  scale(1.2);
-	/*transform: rotate(45deg); /* Equal to rotateZ(45deg) */
-	/*padding-top, padding-right, padding-bottom, and padding-left */
-	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
-  box-shadow: 0px 0px 36px 4px #D9D9D9;
+.column-left-inner{
+	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition:800ms ease all;
+}
+
+/*.column-left:hover .column-left-inner{
+	  transform: rotateY(180deg);
+}*/
+
+.column-left:hover .column-left-front{
+	display: none;
+	transition:800ms ease all;
+}	
+
+.column-left:hover .column-left-back{
+	display: block;
+	transition:800ms ease all;
+}
+
+.column-left-front, .column-left-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   transition:800ms ease all;
 }
 
+.column-left-front{
+  	background-color: #bbb;
+  	color: black;
+  	transition:800ms ease all;
+  	background-image: url(./images/skating.jpg);
+ 	 background-position: center top;
+ 	 background-repeat: no-repeat;
+  	background-width: 100% auto;
+}
+
+#interests img{
+	border-radius: 10px;
+}
+
+
+.column-left-back {
+	display: none;
+  	background-color: whitesmoke;
+  	color: black;
+  	transition:800ms ease all;
+}
+
+.column-middle{
+	/*float: left;
+	margin-right: 20px;
+	width: 30%;
+	height:250px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background: transparent;
+	border: 1px solid black;
+	transition:800ms ease all;
+	perspective: 1000px;*/
+	background-color: transparent;
+  	transition:800ms ease all;
+ 	width: 400px;
+  	height: 530px;
+  	border-radius: 10px;
+
+}
+
+.column-middle-inner{
+	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition:800ms ease all;
+}
+
+/*.column-left:hover .column-left-inner{
+	  transform: rotateY(180deg);
+}*/
+
+.column-middle:hover .column-middle-front{
+	display: none;
+	transition:800ms ease all;
+}	
+
+.column-middle:hover .column-middle-back{
+	display: block;
+	transition:800ms ease all;
+}
+
+.column-middle-front, .column-middle-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transition:800ms ease all;
+}
+
+.column-middle-front{
+  	background-color: #bbb;
+  	color: black;
+  	transition:800ms ease all;
+  	background-image: url(./images/skating.jpg);
+ 	 background-position: center top;
+ 	 background-repeat: no-repeat;
+  	background-width: 100% auto;
+}
+
+
+.column-middle-back {
+	display: none;
+  	background-color: whitesmoke;
+  	color: black;
+  	transition:800ms ease all;
+}
+
+/* old column middle code
 .column-middle{
 	width: 30%;
-	height: 100px;
+	height: 250px;
 	border-radius: 20px;
 	font-size: 14px;
 	padding: 3%;
@@ -221,12 +430,80 @@ img{
 	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
   box-shadow: 0px 0px 36px 4px #D9D9D9;
   transition:800ms ease all;
+}*/
+
+.column-right{
+	/*float: left;
+	margin-right: 20px;
+	width: 30%;
+	height:250px;
+	border-radius: 20px;
+	font-size: 14px;
+	padding: 3%;
+	background: transparent;
+	border: 1px solid black;
+	transition:800ms ease all;
+	perspective: 1000px;*/
+	background-color: transparent;
+  	width: 400px;
+  	height: 530px;
+ 	 transition:800ms ease all;
+ 	 	border-radius: 10px;
+
 }
 
+.column-right-inner{
+	position: relative;
+  	width: 100%;
+  	height: 100%;
+  	text-align: center;
+  	transition:800ms ease all;
+}
+
+/*.column-left:hover .column-left-inner{
+	  transform: rotateY(180deg);
+}*/
+
+.column-right:hover .column-right-front{
+	display: none;
+	transition:800ms ease all;
+}	
+
+.column-right:hover .column-right-back{
+	display: block;
+	transition:800ms ease all;
+}
+
+.column-right-front, .column-right-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  transition:800ms ease all;
+}
+
+.column-right-front{
+  	color: black;
+  	transition:800ms ease all;
+  	background-image: url(./images/skating.jpg);
+ 	 background-position: center top;
+ 	 background-repeat: no-repeat;
+  	background-width: 100% auto;
+}
+
+
+.column-right-back {
+	display: none;
+  	background-color: whitesmoke;
+  	color: black;
+  	transition:800ms ease all;
+}
+/*old column right code
 .column-right{
 	float: right;
 	width: 30%;
-	height: 100px;
+	height: 250px;
 	border-radius: 20px;
 	font-size: 14px;
 	padding: 3%;
@@ -240,27 +517,49 @@ img{
 	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
   box-shadow: 0px 0px 36px 4px #D9D9D9;
   transition:800ms ease all;
+} */
+
+h5{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 25px;
+}
+
+p3{
+	font-family: 'Kanit', sans-serif;
+	font-size: 20px;
 }
 
 #experience{
-	border: 1px solid black;
 	padding: 5%;
 }
 
 #interests{
-	border: 1px solid black;
 	padding: 5%
 }
 
-h5{
-	padding: 5%;
-}
+
 
 #footer{
 	margin-top: 10px;
 	display: flex;
 	justify-content:  space-between;
 	border-top: 1px solid black;
+	padding: 5%;
+}
+
+
+a3{
+	font-family: 'Source Serif Pro', serif;
+	font-size: 40px;
+	margin-bottom: 0px;
+	line-height: 60px;
+
+}
+
+.footer-text{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: lighter;
+	font-size: 20px;	
 }
 /* this section makes background color move
 background-color: #d9e4f5;
