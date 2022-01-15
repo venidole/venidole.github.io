@@ -23,17 +23,6 @@ body{
 	z-index: 1;
 }
 
-/*h{
-	font-family: 'Euphoria Script', cursive;
-	font-size: 50px;
-	margin: 0;
-	position: absolute;
-	top: 50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	margin-left: 2%;
-}*/
-
 a2{
 	margin-left: 80%;
 	text-align: right;
@@ -259,30 +248,43 @@ p2{
 	margin-bottom: 100px;
 }
 
+.publication{
+		border-radius: 30px;
+		border: 1px transparent;
+		background: lightpink;
+		width:  30%;
+		height: 40px;
+		transition:800ms ease all;
+		margin-right: 2%;
+		width: 100%
+	}
+
+	.publication:hover{
+		background: white;
+	}
+
+	.publication a{
+		font-family: 'Quicksand', sans-serif;
+		font-size:  14px;
+		font-weight: 650;
+		letter-spacing: 1px;
+		color: black;
+		text-decoration:  underline;
+		transition:800ms ease all;
+	}
+
+	.publication a:hover{
+		color: lightpink;
+		transition:800ms ease all;
+	}
+
 #interests{
-	/*flex-direction: row;
-	display: block;
-	width: 80%;
-	padding: 2% 7% 0% 7%;
-	height: 40%;
-	display: inline-flex; */
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 0px;
 }
 
 .column-left{
-	/*float: left;
-	margin-right: 20px;
-	width: 30%;
-	height:250px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background: transparent;
-	border: 1px solid black;
-	transition:800ms ease all;
-	perspective: 1000px;*/
 	background-color: transparent;
   	width: 400px;
   	height: 530px;
@@ -297,10 +299,6 @@ p2{
   	text-align: center;
   	transition:800ms ease all;
 }
-
-/*.column-left:hover .column-left-inner{
-	  transform: rotateY(180deg);
-}*/
 
 .column-left:hover .column-left-front{
 	display: none;
@@ -344,17 +342,6 @@ p2{
 }
 
 .column-middle{
-	/*float: left;
-	margin-right: 20px;
-	width: 30%;
-	height:250px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background: transparent;
-	border: 1px solid black;
-	transition:800ms ease all;
-	perspective: 1000px;*/
 	background-color: transparent;
   	transition:800ms ease all;
  	width: 400px;
@@ -370,10 +357,6 @@ p2{
   	text-align: center;
   	transition:800ms ease all;
 }
-
-/*.column-left:hover .column-left-inner{
-	  transform: rotateY(180deg);
-}*/
 
 .column-middle:hover .column-middle-front{
 	display: none;
@@ -412,38 +395,7 @@ p2{
   	transition:800ms ease all;
 }
 
-/* old column middle code
-.column-middle{
-	width: 30%;
-	height: 250px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background: transparent;
-	border: 1px solid black;
-	margin-right: 20px;
-	transition:800ms ease all;
-}
-
-.column-middle:hover{
-	transform:  scale(1.1);
-	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
-  box-shadow: 0px 0px 36px 4px #D9D9D9;
-  transition:800ms ease all;
-}*/
-
 .column-right{
-	/*float: left;
-	margin-right: 20px;
-	width: 30%;
-	height:250px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background: transparent;
-	border: 1px solid black;
-	transition:800ms ease all;
-	perspective: 1000px;*/
 	background-color: transparent;
   	width: 400px;
   	height: 530px;
@@ -459,10 +411,6 @@ p2{
   	text-align: center;
   	transition:800ms ease all;
 }
-
-/*.column-left:hover .column-left-inner{
-	  transform: rotateY(180deg);
-}*/
 
 .column-right:hover .column-right-front{
 	display: none;
@@ -499,25 +447,7 @@ p2{
   	color: black;
   	transition:800ms ease all;
 }
-/*old column right code
-.column-right{
-	float: right;
-	width: 30%;
-	height: 250px;
-	border-radius: 20px;
-	font-size: 14px;
-	padding: 3%;
-	background: transparent;
-	border: 1px solid black;
-	 transition:800ms ease all;
-}
 
-.column-right:hover{
-		transform:  scale(1.1);
-	-webkit-box-shadow: 0px 0px 36px 4px #D9D9D9; 
-  box-shadow: 0px 0px 36px 4px #D9D9D9;
-  transition:800ms ease all;
-} */
 
 h5{
 	font-family: 'Quicksand', sans-serif;
@@ -561,58 +491,3 @@ a3{
 	font-weight: lighter;
 	font-size: 20px;	
 }
-/* this section makes background color move
-background-color: #d9e4f5;
-background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-} */
-
-
-/* this is code from day 1 intro to css (use to refer back to)
-
-body {
-	background-color: white;
-	color: black;
-	font-family: 'Source Sans Pro', sans-serif;
-
-}
-
-a {
-	color: black;
-	text-align:  center;
-}
-
-h1 {
-	text-align: center;
-	color: black;
-	font-family: 'Luxurious Roman', cursive;
-	font-size: 40px;
-}
-
-h2 {
-	text-align: center;
-
-}
-
-p{
-	text-align: center;
-	font-size: 13px;
-	font-family: 'Source Sans Pro', sans-serif;
-	color: #D174FF;
-	text-align: center;
-
-}
-
-p2{
-	color: lightpink;
-	text-align: center;
-} */
